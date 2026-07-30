@@ -26,6 +26,8 @@ jobs:
 
       - name: upload static files
         uses: actions/upload-pages-artifact@v4
+        with:
+          path: "."
 
       - name: deploy to github pages
         id: deployment
